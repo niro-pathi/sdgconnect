@@ -1,6 +1,6 @@
-angular.module('starter.controllers', [])
+angular.module('sdgconnect.controllers', [])
 
-.controller('AppCtrl', function($scope, $ionicModal, $timeout) {
+.controller('AppCtrl', function($scope, $ionicModal, $timeout, $cordovaSplashscreen) {
 
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
@@ -8,6 +8,8 @@ angular.module('starter.controllers', [])
   // listen for the $ionicView.enter event:
   //$scope.$on('$ionicView.enter', function(e) {
   //});
+
+   $cordovaSplashscreen.show();
 
   // Form data for the login modal
   $scope.loginData = {};
